@@ -1,1 +1,1 @@
-export { Box } from "@chakra-ui/react"
+export { Box as default } from "@chakra-ui/react"

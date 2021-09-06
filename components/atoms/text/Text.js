@@ -1,1 +1,1 @@
-export { Text } from "@chakra-ui/react"
+export { Text as default } from "@chakra-ui/react"
