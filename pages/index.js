@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import {Box} from '../components'
+import {Box, FaTwitch} from '../components'
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
         <meta name="description" content="Site de Liwphael, Myumii e Misthy. Streamer da Twitch" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box>test</Box>
+      <Box> <FaTwitch /> test</Box>
     </div>
   )
 }
