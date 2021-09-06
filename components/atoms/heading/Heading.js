@@ -1,0 +1,1 @@
+export { Heading as default } from "@chakra-ui/react"

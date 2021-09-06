@@ -1,4 +1,5 @@
 export { default as Box } from './box'
 export { default as Img } from './img'
 export { default as Text } from './text'
+export { default as Heading } from './heading'
 export * from './faIcons'
