@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { Box, FaTwitch } from '../components';
-import StreamerCard from '../components/molecules/streamerCard';
+import StreamerCard from '../components/molecules/StreamerCard';
 import misthyPicture from '../assets/misthy.svg';
 
 export default function Home() {
