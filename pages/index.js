@@ -11,7 +11,7 @@ export default function Home() {
         <meta name="description" content="Site de Liwphael, Myumii e Misthy. Streamer da Twitch" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box> <FaTwitch /> test</Box>
+      <Box> <FaTwitch /> test </Box>
       <StreamerCard alt="Misthy" bgColor="misthy" headingText="Misthy" imgSrc={misthyPicture} links={["test"]}/>
     </div>
   )
