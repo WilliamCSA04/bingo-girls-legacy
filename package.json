@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "storybook": "build-storybook && start-storybook -p 9009"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.6.7",
@@ -22,6 +23,9 @@
   "devDependencies": {
     "@storybook/addon-a11y": "^6.3.8",
     "@storybook/addon-essentials": "^6.3.8",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/builder-webpack5": "^6.3.9",
+    "@storybook/manager-webpack5": "^6.3.9",
     "@storybook/react": "^6.3.8",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
