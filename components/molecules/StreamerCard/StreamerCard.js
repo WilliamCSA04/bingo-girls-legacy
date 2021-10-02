@@ -1,4 +1,4 @@
-import { Flex, Figure, Img, Figcaption, Heading, Text } from '../../atoms';
+import { Flex, Figure, Img, Figcaption, Heading, Text, Box } from '../../atoms';
 
 export default function StreamerCard({
   bgColor,
@@ -10,7 +10,9 @@ export default function StreamerCard({
   return (
     <Flex bgColor={bgColor}>
       <Figure>
-        <Img src={imgSrc} layout="fill" alt={alt} />
+        <Box p="relative">
+          <Img src={imgSrc} layout="fill" alt={alt} />
+        </Box>
         <Figcaption>
           <Heading>{headingText}</Heading>
         </Figcaption>

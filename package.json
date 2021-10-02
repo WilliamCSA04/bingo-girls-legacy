@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest --watch",
-    "storybook": "build-storybook && start-storybook -p 9009"
+    "storybook": "build-storybook -s public && start-storybook -s public -p 9009"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.6.7",
