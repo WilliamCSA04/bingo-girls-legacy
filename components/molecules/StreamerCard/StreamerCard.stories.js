@@ -10,7 +10,7 @@ export const MisthyStory = () => (
     alt="Misthy"
     bgColor="misthy"
     headingText="Misthy"
-    imgSrc={'/misthy.svg'}
+    imgSrc={'/assets/misthy.svg'}
     links={[
       'https://e7.pngegg.com/pngimages/102/481/png-clipart-anime-desktop-manga-television-show-anime-black-hair-manga-thumbnail.png',
     ]}
