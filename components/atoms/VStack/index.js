@@ -1,1 +1,1 @@
-import VStack from './VStack';
+export { default } from './VStack';
