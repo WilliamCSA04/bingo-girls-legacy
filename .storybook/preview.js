@@ -1,6 +1,7 @@
 import { ChakraProvider } from '@chakra-ui/react';
 
 import * as NextImage from 'next/image';
+import { customTheme } from '../theme';
 
 const OriginalNextImage = NextImage.default;
 
@@ -9,9 +10,11 @@ Object.defineProperty(NextImage, 'default', {
   value: (props) => <OriginalNextImage {...props} unoptimized />,
 });
 
+const customizedTheme = customTheme();
+
 export const decorators = [
   (Story) => (
-    <ChakraProvider>
+    <ChakraProvider theme={customizedTheme}>
       <Story />
     </ChakraProvider>
   ),

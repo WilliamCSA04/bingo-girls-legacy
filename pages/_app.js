@@ -1,22 +1,13 @@
-import { ChakraProvider } from "@chakra-ui/react"
-// 1. Import the extendTheme function
-import { extendTheme, theme } from "@chakra-ui/react"
-// 2. Extend the theme to include custom colors, fonts, etc
-const colors = {
-  misthy: theme.colors.purple,
-  liw: theme.colors.yellow,
-  myu: theme.colors.red,
-  primary: theme.colors.pink,
-  secondary: theme.colors.green,
-}
+import { ChakraProvider } from '@chakra-ui/react';
+import { customTheme } from '../theme';
 
-const customTheme = extendTheme({ colors })
+const customizedTheme = customTheme();
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ChakraProvider theme={customTheme}>
+    <ChakraProvider theme={customizedTheme}>
       <Component {...pageProps} />
     </ChakraProvider>
-  )
+  );
 }
-export default MyApp
+export default MyApp;
