@@ -7,3 +7,5 @@ export { default as Figure } from './Figure';
 export { default as Figcaption } from './Figcaption';
 export { default as VStack } from './VStack';
 export { default as SocialIcon } from './SocialIcon';
+export { default as Link } from './Link';
+export { default as SimpleGrid } from './SimpleGrid';
