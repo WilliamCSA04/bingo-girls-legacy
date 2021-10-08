@@ -43,12 +43,20 @@ export default function StreamerCard({
         </Figcaption>
       </Figure>
       {links && (
-        <SimpleGrid columns={2} spacing={10} p={4}>
+        <SimpleGrid
+          columns={2}
+          spacingX={4}
+          spacingY={1}
+          p={4}
+          gridAutoRows="1fr"
+        >
           {links.map(({ link, text }, index) => (
             <Link key={index} href={link}>
-              <a>
-                <SocialIcon url={link} mr={1} />
-                {text}
+              <a rel="external">
+                <Flex alignItems="center" h="full" lineHeight="shorter">
+                  <SocialIcon url={link} mr={1} boxSize="1.5em" />
+                  {text}
+                </Flex>
               </a>
             </Link>
           ))}
