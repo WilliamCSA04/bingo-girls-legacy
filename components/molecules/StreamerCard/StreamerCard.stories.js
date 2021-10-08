@@ -12,7 +12,10 @@ export const MisthyStory = () => (
     headingText="Misthy"
     imgSrc={'/assets/misthy.svg'}
     links={[
-      'https://e7.pngegg.com/pngimages/102/481/png-clipart-anime-desktop-manga-television-show-anime-black-hair-manga-thumbnail.png',
+      {
+        text: 'Canal de Lives',
+        link: 'https://www.twitch.tv/misthy/',
+      },
     ]}
   />
 );

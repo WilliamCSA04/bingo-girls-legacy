@@ -1,4 +1,15 @@
-import { Flex, Figure, Img, Figcaption, Heading, Text, Box } from '../../atoms';
+import {
+  Flex,
+  Figure,
+  Img,
+  Figcaption,
+  Heading,
+  Text,
+  Box,
+  SocialIcon,
+  Link,
+  SimpleGrid,
+} from '../../atoms';
 
 export default function StreamerCard({
   bgColor,
@@ -31,11 +42,16 @@ export default function StreamerCard({
         </Figcaption>
       </Figure>
       {links && (
-        <Flex>
-          {links.map((link, index) => (
-            <Text key={index}>{link}</Text>
+        <SimpleGrid columns={2} spacing={10} p={4}>
+          {links.map(({ link, text }, index) => (
+            <Link key={index} href={link}>
+              <a>
+                <SocialIcon url={link} mr={1} />
+                {text}
+              </a>
+            </Link>
           ))}
-        </Flex>
+        </SimpleGrid>
       )}
     </Flex>
   );
