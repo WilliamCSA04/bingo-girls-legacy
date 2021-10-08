@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {
   Flex,
   Figure,
@@ -56,3 +57,16 @@ export default function StreamerCard({
     </Flex>
   );
 }
+
+StreamerCard.protoTypes = {
+  alt: PropTypes.string.isRequired,
+  bgColor: PropTypes.string,
+  headingText: PropTypes.string.isRequired,
+  imgSrc: PropTypes.string.isRequired,
+  links: PropTypes.arrayOf(
+    PropTypes.shape({
+      text: PropTypes.string.isRequired,
+      link: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
