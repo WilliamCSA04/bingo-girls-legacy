@@ -6,4 +6,4 @@ export { default as Flex } from './Flex';
 export { default as Figure } from './Figure';
 export { default as Figcaption } from './Figcaption';
 export { default as VStack } from './VStack';
-export * from './FaIcons';
+export { default as SocialIcon } from './SocialIcon';
