@@ -8,10 +8,16 @@ export default function StreamerCard({
   alt,
 }) {
   return (
-    <Flex bgColor={bgColor}>
+    <Flex
+      bgColor={bgColor}
+      w={60}
+      direction="column"
+      textAlign="center"
+      color="white"
+    >
       <Figure>
-        <Box p="relative">
-          <Img src={imgSrc} layout="fill" alt={alt} />
+        <Box position="relative" height={60}>
+          <Img src={imgSrc} layout="fill" objectFit="cover" alt={alt} />
         </Box>
         <Figcaption>
           <Heading>{headingText}</Heading>

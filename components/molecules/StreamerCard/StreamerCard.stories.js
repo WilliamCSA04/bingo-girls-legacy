@@ -8,7 +8,7 @@ export default {
 export const MisthyStory = () => (
   <StreamerCard
     alt="Misthy"
-    bgColor="misthy"
+    bgColor="misthy.500"
     headingText="Misthy"
     imgSrc={'/assets/misthy.svg'}
     links={[

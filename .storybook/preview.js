@@ -10,11 +10,9 @@ Object.defineProperty(NextImage, 'default', {
   value: (props) => <OriginalNextImage {...props} unoptimized />,
 });
 
-const customizedTheme = customTheme();
-
 export const decorators = [
   (Story) => (
-    <ChakraProvider theme={customizedTheme}>
+    <ChakraProvider theme={customTheme}>
       <Story />
     </ChakraProvider>
   ),
