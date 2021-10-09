@@ -1,4 +1,4 @@
-import PropTypes from './PropTypes';
+import PropTypes from 'prop-types';
 import { Section as ChakraSection, VisuallyHidden } from '@chakra-ui/react';
 import { Heading } from '../../atoms';
 
