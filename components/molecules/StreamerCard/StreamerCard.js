@@ -39,7 +39,7 @@ export default function StreamerCard({
           />
         </Box>
         <Figcaption>
-          <Heading fontSize={28} p={2}>
+          <Heading as="h3" fontSize={28} p={2}>
             {headingText}
           </Heading>
         </Figcaption>
