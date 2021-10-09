@@ -39,7 +39,9 @@ export default function StreamerCard({
           />
         </Box>
         <Figcaption>
-          <Heading fontSize={28}>{headingText}</Heading>
+          <Heading fontSize={28} p={2}>
+            {headingText}
+          </Heading>
         </Figcaption>
       </Figure>
       {links && (
@@ -47,7 +49,8 @@ export default function StreamerCard({
           columns={2}
           spacingX={4}
           spacingY={1}
-          p={4}
+          px={4}
+          py={2}
           gridAutoRows="1fr"
         >
           {links.map(({ link, text }, index) => (
