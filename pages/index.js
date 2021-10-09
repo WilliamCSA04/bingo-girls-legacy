@@ -1,11 +1,15 @@
 import Head from 'next/head';
+import { StreamerSection } from '../components/templates';
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Home | Bingo Girls</title>
       </Head>
-    </div>
+      <main>
+        <StreamerSection data={[]} />
+      </main>
+    </>
   );
 }
