@@ -15,6 +15,7 @@ class MyDocument extends Document {
             name="description"
             content="Site de Liwphael, Myumii e Misthy. Streamer da Twitch"
           />
+          <meta name="robots" content="index, follow" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
