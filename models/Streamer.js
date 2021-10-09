@@ -9,9 +9,9 @@ const LinkSchema = new mongoose.Schema({
 
 const StreamerSchema = new mongoose.Schema({
   name: requiredString,
-  alternativeText: requiredString,
-  backgroundColor: requiredString,
-  imageEndpoint: requiredString,
+  alternative_text: requiredString,
+  background_color: requiredString,
+  image_endpoint: requiredString,
   links: [LinkSchema],
 });
 
