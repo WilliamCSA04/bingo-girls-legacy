@@ -70,3 +70,16 @@ export const AllStreamers = () => (
     <MyumiiCard />
   </StreamerWrapper>
 );
+
+export const NeuralGirls = () => (
+  <StreamerWrapper>
+    <MisthyCard />
+    <LiwphaelCard />
+  </StreamerWrapper>
+);
+
+export const FoxLeader = () => (
+  <StreamerWrapper>
+    <MyumiiCard />
+  </StreamerWrapper>
+);
