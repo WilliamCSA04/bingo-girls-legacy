@@ -7,9 +7,12 @@ export default async function handler(req, res) {
   if (method === 'GET') {
     try {
       const streamers = await Streamer.find({});
-      res.status(200).json(streamers);
+      if (!streamers.length) {
+        return res.status(502).json({ message: 'Missing DB info' });
+      }
+      return res.status(200).json(streamers);
     } catch (error) {
-      res.status(500).json(error);
+      return res.status(500).json({ message: error.message });
     }
   }
   return res.status(404);
