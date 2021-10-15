@@ -55,7 +55,7 @@ export default function StreamerCard({
         >
           {links.map(({ link, text }, index) => (
             <Link key={index} href={link}>
-              <a rel="external">
+              <a rel="external noopener">
                 <Flex alignItems="center" h="full" lineHeight="shorter">
                   <SocialIcon url={link} mr={1} boxSize="1.5em" />
                   {text}
