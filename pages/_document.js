@@ -15,7 +15,11 @@ class MyDocument extends Document {
             name="description"
             content="Site de Liwphael, Myumii e Misthy. Streamer da Twitch"
           />
-          <meta name="robots" content="index, follow" />
+          {process.env.NODE_ENV === 'production' ? (
+            <meta name="robots" content="index, follow" />
+          ) : (
+            <meta name="robots" content="noindex, nofollow" />
+          )}
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
