@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { StreamerSection } from '../components';
-import { getStreamers } from '../services/api';
+import { mongo } from '../lib';
+import { Streamer } from '../models';
 
 export default function Home({ data }) {
   return (
@@ -16,16 +17,24 @@ export default function Home({ data }) {
 }
 
 export async function getStaticProps(context) {
-  const data = await getStreamers();
-  const parsed = data.map((d) => ({
-    alt: d.alternative_text,
-    bgColor: d.background_color,
-    headingText: d.name,
-    imgSrc: d.image_endpoint,
-    links: d.links,
-  }));
-  return {
-    props: { data: parsed }, // will be passed to the page component as props
-    revalidate: 180,
-  };
+  try {
+    await mongo.connect();
+    const streamers = await Streamer.find({}).lean();
+    if (!streamers.length) {
+      throw new Error('Failed to get streamers data');
+    }
+    const parsed = streamers.map((d) => ({
+      alt: d.alternative_text,
+      bgColor: d.background_color,
+      headingText: d.name,
+      imgSrc: d.image_endpoint,
+      links: d.links,
+    }));
+    return {
+      props: { data: parsed },
+      revalidate: 180,
+    };
+  } catch {
+    throw new Error('Error while building Home');
+  }
 }
