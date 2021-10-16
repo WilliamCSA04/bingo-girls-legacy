@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import { Section as ChakraSection, VisuallyHidden } from '@chakra-ui/react';
+import { Box, VisuallyHidden } from '@chakra-ui/react';
 import { Heading } from '../../atoms';
 
 export default function Section({ children, title = '', hiddenTitle = false }) {
   return (
-    <ChakraSection>
+    <Box as="section">
       {hiddenTitle ? (
         <VisuallyHidden>
           <Heading>{title}</Heading>
@@ -13,7 +13,7 @@ export default function Section({ children, title = '', hiddenTitle = false }) {
         <Heading>{title}</Heading>
       )}
       {children}
-    </ChakraSection>
+    </Box>
   );
 }
 

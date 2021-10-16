@@ -19,6 +19,7 @@ export default function StreamerCard({
   links = [],
   alt,
 }) {
+  console.log('Streamer Card');
   return (
     <Flex
       bgColor={bgColor}
