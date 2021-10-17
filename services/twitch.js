@@ -31,3 +31,9 @@ export async function getUsers({ logins = [] }) {
   const res = await request(endpoint);
   return res;
 }
+
+export async function getClips({ broadcasterId }) {
+  const endpoint = `${BASE_URL}/clips?broadcaster_id=${broadcasterId}`;
+  const res = await request(endpoint);
+  return res;
+}
