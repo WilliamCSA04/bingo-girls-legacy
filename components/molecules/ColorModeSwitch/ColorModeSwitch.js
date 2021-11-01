@@ -10,12 +10,12 @@ function IconWrapper({ children }) {
   );
 }
 
-export default function ColorModeSwitch() {
+export default function ColorModeSwitch(props) {
   const { colorMode, toggleColorMode } = useColorMode();
   const isLightMode = colorMode === 'light';
   const mode = !isLightMode ? 'claro' : 'escuro';
   return (
-    <Flex>
+    <Flex {...props}>
       <IconWrapper>
         <Icon as={isLightMode ? BsSunFill : BsSun} color="yellow.400" />
       </IconWrapper>
