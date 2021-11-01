@@ -11572,6 +11572,11 @@ react-style-singleton@^2.1.0:
     invariant "^2.2.4"
     tslib "^1.0.0"
 
+react-swipper@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-swipper/-/react-swipper-1.0.2.tgz#c0b8dd64a8dd09bfb2008c89a1e4d12bbdfd0574"
+  integrity sha1-wLjdZKjdCb+yAIyJoeTRK739BXQ=
+
 react-syntax-highlighter@^13.5.3:
   version "13.5.3"
   resolved "https://registry.yarnpkg.com/react-syntax-highlighter/-/react-syntax-highlighter-13.5.3.tgz#9712850f883a3e19eb858cf93fad7bb357eea9c6"
