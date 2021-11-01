@@ -1,5 +1,7 @@
+import { useColorModeValue } from '@chakra-ui/react';
 import { Header } from '../../organisms';
 
 export default function BingoHeader() {
-  return <Header bgColor="pink.300" h="10xs" />;
+  const color = useColorModeValue('pink.300', 'gray.900');
+  return <Header bgColor={color} h="10xs" />;
 }
