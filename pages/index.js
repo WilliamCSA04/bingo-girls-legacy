@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { StreamerSection } from '../components';
+import { BingoHeader, StreamerSection } from '../components';
 import { mongo } from '../lib';
 import { Streamer } from '../models';
 import { getClips, getUsers } from '../services';
@@ -11,6 +11,7 @@ export default function Home({ streamers, clips }) {
         <title>Home | Bingo Girls</title>
       </Head>
       <main>
+        <BingoHeader />
         <StreamerSection data={streamers} />
       </main>
     </>
