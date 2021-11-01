@@ -57,6 +57,17 @@ const config = {
   useSystemColorMode: false,
 };
 
+const sizes = {
+  '4xs': '12rem',
+  '5xs': '10rem',
+  '6xs': '9rem',
+  '7xs': '8rem',
+  '8xs': '7rem',
+  '9xs': '6rem',
+  '10xs': '5rem',
+  '11xs': '4rem',
+};
+
 export default function customTheme() {
   const colors = {
     misthy: theme.colors.purple,
@@ -69,5 +80,5 @@ export default function customTheme() {
     tiktok: TIKTOK_COLORS,
     twitch: TWITCH_COLORS,
   };
-  return extendTheme({ colors, config });
+  return extendTheme({ colors, config, sizes });
 }
