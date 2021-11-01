@@ -11,3 +11,4 @@ export { default as Link } from './Link';
 export { default as SimpleGrid } from './SimpleGrid';
 export { default as Switch } from './Switch';
 export { default as Header } from './Header';
+export { default as Icon } from './Icon';
