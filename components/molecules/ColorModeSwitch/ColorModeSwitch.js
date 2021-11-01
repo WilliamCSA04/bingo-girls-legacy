@@ -7,9 +7,9 @@ export default function ColorModeSwitch() {
   const isLightMode = colorMode === 'light';
   return (
     <Flex>
-      <Icon icon={isLightMode ? BsSunFill : BsSun} />
+      <Icon as={isLightMode ? BsSunFill : BsSun} />
       <Switch onChange={toggleColorMode} defaultValue={isLightMode} />
-      <Icon icon={isLightMode ? BsMoon : BsMoonFill} />
+      <Icon as={isLightMode ? BsMoon : BsMoonFill} />
     </Flex>
   );
 }
