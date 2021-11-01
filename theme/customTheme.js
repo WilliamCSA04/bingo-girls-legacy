@@ -52,6 +52,11 @@ const TWITCH_COLORS = {
   900: '#0d0519',
 };
 
+const config = {
+  initialColorMode: 'light',
+  useSystemColorMode: false,
+};
+
 export default function customTheme() {
   const colors = {
     misthy: theme.colors.purple,
@@ -64,5 +69,5 @@ export default function customTheme() {
     tiktok: TIKTOK_COLORS,
     twitch: TWITCH_COLORS,
   };
-  return extendTheme({ colors });
+  return extendTheme({ colors, config });
 }
