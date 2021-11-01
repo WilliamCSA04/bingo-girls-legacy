@@ -1,3 +1,3 @@
-import { SwiperSlide } from 'swiper/react';
+import { SwiperSlide } from 'swiper';
 
 export default SwiperSlide;
