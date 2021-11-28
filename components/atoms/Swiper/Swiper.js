@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
-import { Flex } from '@chakra-ui/react';
-import Carousel from 'react-elastic-carousel';
-export default function Swiper({ children }) {
-  return <Carousel>{children}</Carousel>;
+import AliceCarousel from 'react-alice-carousel';
+import '../../../node_modules/react-alice-carousel/lib/alice-carousel.css';
+
+export default function Swiper({ items, ...props }) {
+  return <AliceCarousel items={items} {...props} />;
 }
 
 Swiper.propTypes = {
