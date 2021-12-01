@@ -1,9 +1,4 @@
-import {
-  getAllByRole,
-  getAllByTestId,
-  render,
-  screen,
-} from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { ChakraProvider } from '@chakra-ui/react';
 import { customTheme } from '../../../theme';
 import GenericSwiper from '.';
