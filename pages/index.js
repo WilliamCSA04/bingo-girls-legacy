@@ -44,6 +44,7 @@ export async function getStaticProps(context) {
         return res.data;
       })
     );
+    console.log(clipsData);
     return {
       props: { streamers: parsed, clips: clipsData },
       revalidate: 180,
