@@ -41,12 +41,15 @@ export async function getStaticProps(context) {
     const clipsData = await Promise.all(
       bingoClips.map(async (clips) => {
         const res = await clips.json();
+        res.data = res.data.map((data) => ({
+          url: data.embed_url,
+          ...data,
+        }));
         return res.data;
       })
     );
-    console.log(clipsData);
     return {
-      props: { streamers: parsed, clips: clipsData },
+      props: { streamers: parsed, clips: clipsData.flat() },
       revalidate: 180,
     };
   } catch (err) {
