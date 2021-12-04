@@ -1,16 +1,16 @@
 import PropTypes from 'prop-types';
 import { Box, VisuallyHidden } from '@chakra-ui/react';
-import { Heading } from '../../atoms';
+import { SectionTitle } from '../../molecules';
 
 export default function Section({ children, title = '', hiddenTitle = false }) {
   return (
     <Box as="section">
       {hiddenTitle ? (
         <VisuallyHidden>
-          <Heading>{title}</Heading>
+          <SectionTitle>{title}</SectionTitle>
         </VisuallyHidden>
       ) : (
-        <Heading>{title}</Heading>
+        <SectionTitle>{title}</SectionTitle>
       )}
       {children}
     </Box>
