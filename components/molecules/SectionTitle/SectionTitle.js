@@ -1,5 +1,5 @@
 import { Heading } from '../../atoms';
 
-export default function SectionTitle({ text }) {
-  return <Heading>{text}</Heading>;
+export default function SectionTitle({ children }) {
+  return <Heading>{children}</Heading>;
 }
