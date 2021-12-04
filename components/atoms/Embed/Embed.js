@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 export default function Embed(props) {
-  <embed {...props} />;
+  return <embed {...props} width={100} height={100} />;
 }
 
 Embed.propTypes = {
