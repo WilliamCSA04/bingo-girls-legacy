@@ -1,3 +1,5 @@
+:warning: **This project will be remade using remix from scratch!**
+
 # Bingo Girls
 
 Website about three friends that are content creators :blue_heart:
